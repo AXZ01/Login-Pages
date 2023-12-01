@@ -1,9 +1,9 @@
 <?php
 
-$host = "localhost"; // replace with your database host
-$user = "root"; // replace with your database username
-$password = ""; // replace with your database password
-$database = "user_authentication"; // replace with your database name
+$host = "localhost"; 
+$user = "root"; 
+$password = ""; 
+$database = "user_authentication"; 
 
 $mysqli = new mysqli($host, $user, $password, $database);
 

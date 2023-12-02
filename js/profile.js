@@ -1,10 +1,10 @@
-
+// profile.js
 $(document).ready(function () {
-
+    // Fetch user details from localStorage
     const userDetails = JSON.parse(localStorage.getItem('userDetails'));
 
     if (userDetails) {
-
+        // Display user details on the profile page
         const profileDetails = $('#profileDetails');
         profileDetails.html(`
             <p><strong>Name:</strong> ${userDetails.name}</p>
@@ -14,8 +14,15 @@ $(document).ready(function () {
             <p><strong>Date of Birth:</strong> ${userDetails.dob}</p>
         `);
     } else {
-
+        // Handle the case where user details are not available
         alert('User details not found. Please log in.');
-        window.location.href = 'login.html';
+        window.location.href = 'login.html'; // Redirect to login page
     }
 });
+
+// profile.js
+function navigateToUpdateDetails() {
+    window.location.href = 'update-details.html';
+}
+
+

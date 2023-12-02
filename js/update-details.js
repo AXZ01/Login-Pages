@@ -1,7 +1,7 @@
-// update-details.js
+
 
 function submitUpdateDetails() {
-    // Fetch form data
+
     var formData = {
         higherEducation: $("#higherEducation").val(),
         collegeName: $("#collegeName").val(),
@@ -10,16 +10,16 @@ function submitUpdateDetails() {
         cgpa: $("#cgpa").val()
     };
 
-    // Send the data to the server using AJAX
+
     $.ajax({
-        url: 'php/submitDetails.php', // Update the path to your submitDetails.php script
+        url: 'php/submitDetails.php',
         method: 'POST',
         data: formData,
         success: function (response) {
             var data = JSON.parse(response);
             if (data.status === 'success') {
                 alert(data.message);
-                // Optionally, redirect to another page or perform additional actions
+
             } else {
                 alert(data.message);
             }

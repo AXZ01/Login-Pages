@@ -13,11 +13,11 @@
 }
 
 .alert-success {
-  background-color: #4caf50; /* Green */
+  background-color: #4caf50;
   color: white;
 }
 
 .alert-danger {
-  background-color: #f44336; /* Red */
+  background-color: #f44336;
   color: white;
 }
